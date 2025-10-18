@@ -29,6 +29,12 @@ function Counter(props) {
             Decrement
           </button>
         )}
+        <button
+            onClick={props.onDelete}
+            className="mx-4 bg-red-500 text-white cursor-pointer font-bold py-2 px-4 rounded hover:bg-red-700"
+          >
+            Delete
+          </button>
       </div>
     </>
   );

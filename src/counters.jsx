@@ -21,6 +21,9 @@ export default function Counters() {
     oldArr[index].value = oldArr[index].value - 1;
     setA(a = oldArr)
   };
+  const handleDelete = () => {
+    setA()
+  }
   let totalVal = 0;
   a.forEach(c => {
     totalVal += c.value;
@@ -34,6 +37,7 @@ export default function Counters() {
             key={c.id}
               onIncrement={() => handleIncrement(c)}
               onDecrement={() => handleDecrement(c)}
+              onDelete={() => handleDelete(c)}
               value={c.value}
             />
           
