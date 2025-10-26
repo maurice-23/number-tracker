@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Counter from "./counter";
-
 export default function Counters() {
   let [a, setA] = useState([
     { id: 1, value: 0 },
